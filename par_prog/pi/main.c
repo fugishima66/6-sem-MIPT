@@ -54,7 +54,7 @@ int main(int argc, char* argv[])
 	// Determine which path of series should calculate
     unsigned long length = (N / commSize) + ((N % commSize > myRank) ? 1 : 0);
     unsigned long begin = length * myRank;
-    printf("my rank %d, stark %lu end %lu\n", myRank, begin, begin + length);
+    printf("my rank %d, start %lu end %lu\n", myRank, begin, begin + length);
     double result = calculatePi(begin, begin + length);
     printf("my rank %d, my result %g, stark %lu end %lu\n", myRank, result, begin, begin + length);
 

@@ -2,7 +2,7 @@ EXEC = commtime
 SRC = main.c
 OUTDIR = build
 
-CFLAGS = -std=c99
+CFLAGS = -std=c99 -lm -ldl
 
 all:
 	mkdir -p ${OUTDIR}

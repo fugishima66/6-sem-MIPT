@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import os
 import subprocess
@@ -13,8 +14,8 @@ if len(sys.argv) != 2:
 # Extract cpp programm from command line arguments
 cppProgram = sys.argv[1]
 
-startCore = 2
-endCore = 6
+startCore = 1
+endCore = 4
 nCores = endCore - startCore + 1
 timeArray = np.zeros(nCores)
 
